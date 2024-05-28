@@ -1387,14 +1387,7 @@ table(chrXY_Lib5_N3[,3]>0)#Female
 table(chrXY_Lib5_N4[,3]>0)#Female
 table(chrXY_Lib5_N5[,3]>0)#Male
 table(chrXY_Lib5_N6[,3]>0)#Female
-FALSE  TRUE 
- 3122    99 
-FALSE  TRUE 
- 4114   141 
-FALSE  TRUE 
-  329  2541 
-FALSE  TRUE 
- 3741   113 
+
 
 #combined=combined1
 combined$Sex=0
