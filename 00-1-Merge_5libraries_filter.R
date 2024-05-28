@@ -1398,8 +1398,8 @@ FALSE  TRUE
 
 #combined=combined1
 combined$Sex=0
-combined$Sex[which(combined$Label=="Patient1")]="Female"
-combined$Sex[which(combined$Label=="Patient2")]="Male"
+combined$Sex[which(combined$Label=="Patient1")]="Female"#HYJ
+combined$Sex[which(combined$Label=="Patient2")]="Male"#FSP
 combined$Sex[which(combined$Label=="Patient3")]="Male"#ZCH
 combined$Sex[which(combined$Label=="Patient4")]="Female"#WXD
 combined$Sex[which(combined$Label=="Patient5")]="Female"#FZL
@@ -1412,7 +1412,7 @@ combined$Sex[which(combined$Label=="Normal6")]="Female"
 
 
 saveRDS(combined,"Merge_after_filter_includP2.rds")
-combined=subset(x=combined,Label!="Patient2")
+combined=subset(x=combined,Label!="Patient2")##太少
 saveRDS(combined,"Merge_after_filter1.rds")
 
 ###后期经过讨论决定要将Patient5（FZL，经过治疗）的样本去掉
