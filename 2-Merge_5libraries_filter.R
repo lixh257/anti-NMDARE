@@ -1,6 +1,3 @@
-#Cellranger-arc
-#0-cellranger.pbs
-
 #cellranger output file path:
 Lib1:/data/R03/zhangwx/project/human_PBMC/lib1/outs
 Lib2:/data/R03/zhangwx/project/human_PBMC/lib2/lib2/outs
@@ -1402,9 +1399,9 @@ combined$Sex[which(combined$Label=="Normal3")]="Female"
 combined$Sex[which(combined$Label=="Normal4")]="Female"
 combined$Sex[which(combined$Label=="Normal5")]="Male"
 combined$Sex[which(combined$Label=="Normal6")]="Female"
-
-
 saveRDS(combined,"Merge_after_filter_includP2.rds")
+
+
 combined=subset(x=combined,Label!="Patient2")##太少
 saveRDS(combined,"Merge_after_filter1.rds")
 
