@@ -7,12 +7,14 @@ Raw Data :
 
 Code process:
 
+
 1. Processing raw data by cellranger-arc-2.0.1
    
-(1-cellranger-example.pbs)
+(1-cellranger-example.sh)
 
 
 2.QC
+
 (2-Merge_5libraries_filter.R)
 
 ##in this part:
@@ -23,7 +25,7 @@ Add sex of each samples;
 
 3. Reduction and Annotation cell type
 
-   (3-Reduction_Annotation.R)
+(3-Reduction_Annotation.R)
 
 4-15. Figures
 
