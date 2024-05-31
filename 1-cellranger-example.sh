@@ -1,11 +1,4 @@
 #an example 
-## PBS configure 
-#PBS -N lib4
-#PBS -j oe
-#PBS -q batch
-#PBS -S /bin/sh
-#PBS -l nodes=1:ppn=20
-#PBS -l mem=30G
 cd /md01/zhangwx/project/human_PBMC/lib4/
 /md01/yangjw28/software/cellranger-arc-2.0.1/bin/cellranger-arc count \
 --id=lib4 \
