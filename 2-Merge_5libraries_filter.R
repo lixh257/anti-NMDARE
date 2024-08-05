@@ -1263,19 +1263,19 @@ python ./MitoSort_pipeline.py demultiplex -o \
 #source: /data/R04/chenbzh5/bottleneck2/simulation/bam_data/simulate_depth/MitoSort_test/ 
 setwd("/data/R04/lixh/Autoimmune/1-5Lib_5AE_6Nor/")
 combined=readRDS("Merge_after_filter1.rds")
-pre_Lib1=read.table("/data/R04/chenbzh5/bottleneck2/simulation/bam_data/simulate_depth/MitoSort_test/lib1/MitoSort/Demultiplex_output/lib1_depth_1_result_pvalue.txt",sep="\t",head=T)
+pre_Lib1=read.table("/data/R04/lixh/Autoimmune/1-5Lib_5AE_6Nor/Sup_Fig1_QC/MitoSort_test/lib1/MitoSort/Demultiplex_output/lib1_depth_1_result_pvalue.txt",sep="\t",head=T)
 pre_Lib1_patient1=pre_Lib1[which(pre_Lib1[,2]=="Sample0"),1]
 pre_Lib1_patient2=pre_Lib1[which(pre_Lib1[,2]=="Sample1"),1]
 
-pre_Lib3=read.table("/data/R04/chenbzh5/bottleneck2/simulation/bam_data/simulate_depth/MitoSort_test/lib3/MitoSort/Demultiplex_output/lib3_depth_1_result_pvalue.txt",sep="\t",head=T)
+pre_Lib3=read.table("/data/R04/lixh/Autoimmune/1-5Lib_5AE_6Nor/Sup_Fig1_QC/MitoSort_test/lib3/MitoSort/Demultiplex_output/lib3_depth_1_result_pvalue.txt",sep="\t",head=T)
 pre_Lib3_patient=pre_Lib3[which(pre_Lib3[,2]=="Sample1"),1]#female,吴小丹
 pre_Lib3_normal=pre_Lib3[which(pre_Lib3[,2]=="Sample0"),1]#male,Normal
 
-pre_Lib4=read.table("/data/R04/chenbzh5/bottleneck2/simulation/bam_data/simulate_depth/MitoSort_test/lib4/MitoSort/Demultiplex_output/lib4_depth_1_result_pvalue.txt",sep="\t",head=T)
+pre_Lib4=read.table("/data/R04/lixh/Autoimmune/1-5Lib_5AE_6Nor/Sup_Fig1_QC/MitoSort_test/lib4/MitoSort/Demultiplex_output/lib4_depth_1_result_pvalue.txt",sep="\t",head=T)
 pre_Lib4_patient=pre_Lib4[which(pre_Lib4[,2]=="Sample1"),1]#female,冯芷琳
 pre_Lib4_normal=pre_Lib4[which(pre_Lib4[,2]=="Sample0"),1]#male,Normal
 
-pre_Lib5=read.table("/data/R04/chenbzh5/bottleneck2/simulation/bam_data/simulate_depth/MitoSort_test/lib5/MitoSort/Demultiplex_output/lib5_depth_1_result_pvalue.txt",sep="\t",head=T)
+pre_Lib5=read.table("/data/R04/lixh/Autoimmune/1-5Lib_5AE_6Nor/Sup_Fig1_QC/MitoSort_test/lib5/MitoSort/Demultiplex_output/lib5_depth_1_result_pvalue.txt",sep="\t",head=T)
 pre_Lib5_normal1=pre_Lib5[which(pre_Lib5[,2]=="Sample2"),1]
 pre_Lib5_normal2=pre_Lib5[which(pre_Lib5[,2]=="Sample1"),1]
 pre_Lib5_normal3=pre_Lib5[which(pre_Lib5[,2]=="Sample3"),1]
